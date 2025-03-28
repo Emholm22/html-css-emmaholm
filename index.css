@@ -8,3 +8,17 @@
    flex-direction: column;
    align-items: center;
 }
+#banner .mountain {
+    width: 100%;
+    max-width: 343px;
+    margin-bottom: 10px;
+}
+#banner .explore {
+    background-color:rgb(var(--color-white)) ;
+    color: rgb(var(--color-primary));
+    font-size: 36px;
+    font-weight: 500;
+    padding: 20px 11px 15px 11px;
+    border-radius: 6px;
+    transition: 3s;
+}
