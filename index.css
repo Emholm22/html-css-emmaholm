@@ -69,7 +69,7 @@
 }
 
 #notice .right {
-    background: url('../images/banners/mountain.png') no-repeat center/cover;
+    background: url('banners/mountain.png') no-repeat center/cover;
 }
 
 #notice .right .right-wrapper {
