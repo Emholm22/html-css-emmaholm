@@ -58,3 +58,29 @@
     margin-top: 10px;
     margin-bottom: 16px;
 }
+#notice .mountain {
+    max-width: 100%;
+    width: 600px;
+}
+
+#notice .slogan {
+    max-width: 90%;
+    width: 600px;
+}
+
+#notice .right {
+    background: url('../images/banners/mountain.png') no-repeat center/cover;
+}
+
+#notice .right .right-wrapper {
+    padding: 30px;
+    display: flex;
+    align-items: end;
+    background: rgba(var(--color-primary), 40%);
+    height: 100%;
+}
+
+#notice .right .actions {
+    display: flex;
+    gap: 34px;
+}
