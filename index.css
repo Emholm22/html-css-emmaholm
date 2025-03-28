@@ -22,3 +22,39 @@
     border-radius: 6px;
     transition: 3s;
 }
+#banner .explore:hover {
+    background: rgb(var(--color-primary));
+    color: rgb(var(--color-white));
+}
+
+
+
+#notice {
+    margin-top: 37px;
+}
+
+#notice .wrapper {
+    gap: 43px;
+    display: grid;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#notice .left {
+    background: rgb(var(--color-primary));
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding-top: 193px;
+    padding-bottom: 109px;
+}
+
+#notice .left h2 {
+    text-align: center;
+    font-family: var(--font-secondary);
+    font-weight: 500;
+    font-size: 36px;
+    color: rgb(var(--color-white));
+    margin-top: 10px;
+    margin-bottom: 16px;
+}
