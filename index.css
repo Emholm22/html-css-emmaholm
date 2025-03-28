@@ -1,0 +1,10 @@
+#banner {
+    background: url(banners/home-banner.png) no-repeat center/cover; 
+    padding-top: 419px;
+    padding-bottom: 24px;
+}
+#banner .wrapper {
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+}
