@@ -11,3 +11,45 @@
     --font-primary: 'Mohave', sans-serif;
     --font-secondary: 'Roboto', sans-serif;
 }
+body {
+    font-family: var(--font-primary);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+ul, ol {
+    list-style-type: none;
+}
+
+a {
+    text-decoration: none;
+    display: inline-block;
+}
+
+button {
+    cursor: pointer;
+    background: none;
+    border: none;
+    display: inline-block;
+}
+
+img {
+    display: inline-block;
+}
+
+.container {
+    width: 100%;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 1rem;
+    padding-right: 1rem;
+}
+
+
+.swiper-slide {
+    height: auto;
+}
