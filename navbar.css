@@ -1,1 +1,23 @@
 @import url('breadcrumb.css');
+#topHeader {
+    background: rgb(var(--color-primary));
+    padding: 12px 0;
+}
+
+#topHeader .header-parent {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+}
+
+#topHeader .header-parent button:hover, #topHeader .header-parent a:hover {
+    scale: 1.05;
+} 
+
+#topHeader button img, #topHeader a img {
+    width: 24px;
+}
+
+header.has-divider {
+    border-bottom: 2px solid rgb(var(--color-primary));
+}
