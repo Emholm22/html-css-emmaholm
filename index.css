@@ -236,3 +236,31 @@
         font-size: 16px;
     }
 }
+@media (max-width: 767px) and (min-width: 640px) {
+
+
+    #notice .wrapper {
+        gap: 20px;
+    }
+    
+    #notice .left {
+        padding-top: 100px;
+    }
+    
+    #notice .left h2 {
+        font-size: 25px;
+    }
+
+    #notice .left h2 br {
+        display: none;
+    }
+    
+    #notice .right .actions {
+        gap: 20px;
+    }
+    
+    #notice .right a {
+        font-size: 20px;
+        padding: 15px 20px;
+    }
+}
