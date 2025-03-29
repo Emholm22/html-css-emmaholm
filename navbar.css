@@ -21,3 +21,46 @@
 header.has-divider {
     border-bottom: 2px solid rgb(var(--color-primary));
 }
+#navbar {
+    padding-top: 12px;
+    padding-bottom: 10px;
+    background: rgb(var(--color-white));
+}
+
+#navbar .wrapper {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+#navbar .logo img {
+    width: 120px;
+}
+
+#navbar .menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+#navbar .link, .sidebar .link {
+    font-size: 24px;
+    color: rgb(var(--color-dark));
+    display: block;
+    position: relative;
+}
+
+#navbar .link::after, .sidebar .link::after {
+    bottom: 0;
+    left: 0;
+    height: 2px;
+    width: 0;
+    content: '';
+    background: rgb(var(--color-dark));
+    position: absolute;
+    transition: .3s;
+}
+
+#navbar .link:hover::after, .sidebar .link:hover::after {
+    width: 100%;;
+}
