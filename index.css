@@ -182,3 +182,57 @@
 #newSeason .product .price {
     margin-top: 12px;
 }
+@media (max-width: 639px) {
+
+    #banner .explore {
+        font-size: 26px;
+        padding: 15px 11px 10px 11px;
+    }
+
+    #banner .mountain {
+        max-width: 250px;
+    }
+
+    #notice .wrapper {
+        gap: 20px;
+    }
+
+    #notice .left h2 br {
+        display: none;
+    }
+
+    #notice .left h2 {
+        font-size: 25px;
+    }
+
+    #notice .left {
+        padding-top: 100px;
+    }
+
+    #notice .left, #notice .right {
+        grid-column: span 2 / span 2;
+    }
+
+    #notice .right .right-wrapper {
+        padding-top: 100px;
+        padding-bottom: 100px;
+    }
+
+    #notice .right .actions {
+        flex-direction: column;
+        width: 100%;
+    }
+
+    #notice .right a {
+        font-size: 25px;
+        width: 100%;
+        text-align: center;
+        padding: 15px 25px;
+        gap: 15px;
+    }
+
+
+    #newSeason .product .title, #newSeason .product .price {
+        font-size: 16px;
+    }
+}
