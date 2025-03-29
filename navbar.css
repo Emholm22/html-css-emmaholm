@@ -64,3 +64,50 @@ header.has-divider {
 #navbar .link:hover::after, .sidebar .link:hover::after {
     width: 100%;;
 }
+#navbar .link.icon {
+    width: 30px;
+}
+
+#navbar .link.icon::after {
+    display: none;
+}
+
+.sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    background: rgb(var(--color-white));
+    height: 100dvh;
+    transition: .4s;
+    max-width: 100%;
+    z-index: 99;
+}
+
+.sidebar.active {
+    right: 0px;
+}
+
+.sidebar .header {
+    padding: 15px;
+}
+
+.sidebar .menu-mobile {
+    padding: 15px;
+}
+
+.sidebar .menu-mobile .link {
+    margin-top: 10px;
+    padding-bottom: 5px;
+    border-bottom: 1px solid rgba(var(--color-dark), 0.05);
+}
+
+.sidebar .menu-mobile .icon {
+    margin-top: 20px;
+    border-bottom: none;
+}
+
+#navbar .sidebar-button {
+    display: none;
+    margin-left: 10px;
+}
