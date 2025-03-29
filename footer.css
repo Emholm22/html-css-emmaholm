@@ -1,0 +1,11 @@
+#footer {
+    background: rgb(var(--color-primary));
+    padding-top: 35px;
+    padding-bottom: 15px;
+}
+
+#footer .wrapper {
+    display: grid;
+    grid-template-columns: repeat(16, minmax(0, 1fr));
+    gap: 58px;
+}
