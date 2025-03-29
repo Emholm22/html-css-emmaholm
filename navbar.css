@@ -146,3 +146,38 @@ header.has-divider {
         display: inline-block;
     }
 }
+@media (max-width: 767px) and (min-width: 640px) {
+
+    #topHeader {
+        padding: 8px 0;
+    }
+
+    #topHeader button img, #topHeader a img {
+        width: 18px;
+    }
+
+    #navbar .logo img {
+        width: 80px;
+    }
+
+    #navbar .menu {
+        gap: 10px;
+    }
+
+    #navbar .menu .link {
+        display: none;
+        align-items: center;
+    }
+
+    #navbar .menu .link.icon img {
+        width: 24px;
+    }
+
+    #navbar .menu .link.small-screen {
+        display: inline-block;
+    }
+
+    #navbar .sidebar-button {
+        display: inline-block;
+    }
+}
