@@ -140,3 +140,45 @@
     transform: translateY(-50%);
     z-index: 10;
 }
+#newSeason .product .photo {
+    display: block;
+    height: 100%;
+    overflow: hidden;
+}
+
+#newSeason .product .photo img {
+    width: 100%;
+    height: 100%;
+    display: inline-block;
+    object-fit: cover;
+    transition: .4s ease-in-out;
+}
+
+#newSeason .product:hover .photo img {
+    transform: scale(1.05) rotate(-2deg);
+}
+
+#newSeason .product .details {
+    display: block;
+}
+
+#newSeason .product:hover .details * {
+    text-decoration: underline;
+}
+
+#newSeason .product .title, #newSeason .product .price {
+    display: block;
+    width: 100%;
+    font-size: 24px;
+    font-weight: 500;
+    color: rgb(var(--color-dark));
+    text-align: center;
+}
+
+#newSeason .product .title {
+    margin-top: 10px;
+}
+
+#newSeason .product .price {
+    margin-top: 12px;
+}
