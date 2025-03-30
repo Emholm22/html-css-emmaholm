@@ -190,3 +190,10 @@
 #productDetails .size .guide a:hover {
     letter-spacing: .4px;
 }
+#productDetails .add-to-cart {
+    border: 2px solid rgb(var(--color-primary));
+    border-left: none;
+    border-right: none;
+    padding-top: 26px;
+    padding-bottom: 28px;
+}
