@@ -241,9 +241,9 @@
 }
 
 #newSeason .product {
-    display: flex;
-    flex: 0 1 calc(20% - 10px);
-    max-width: calc(20% - 10px);
+    display: none;
+    flex: 0 1 calc(25% - 15px);
+    max-width: calc(25% - 15px);
     box-sizing: border-box;
     flex-direction: column;
     height: 100%;
@@ -254,13 +254,13 @@
     gap: 20px;
 }
 @media (max-width: 1024px) {
-    #newSeason .products-container {
+    #newSeason .product-container {
         grid-template-columns: repeat(2, 1fr);
     }
 }
 
 @media (max-width: 768px) {
-    #newSeason .products-container {
+    #newSeason .product-container {
         grid-template-columns: repeat(1, 1fr);
     }
 }
