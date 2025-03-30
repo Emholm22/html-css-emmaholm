@@ -211,3 +211,15 @@
     border: 2px solid rgb(var(--color-primary));
     transition: .4s color;
 }
+
+#productDetails .add-to-cart button:hover {
+    background: rgb(var(--color-white));
+    color: rgb(var(--color-primary));
+}
+
+#productDetails .delivery {
+    padding-top: 93px;
+    font-size: 24px;
+    padding-bottom: 25px;
+    border-bottom: 2px solid rgb(var(--color-primary));
+}
