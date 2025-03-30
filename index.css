@@ -270,15 +270,14 @@
 
 #newSeason .product .photo {
     display: block;
-    height: 100%;
+    height: auto;
     overflow: hidden;
 }
 
 #newSeason .product .photo img {
-    width: 100%;
-    height: 100%;
+    width: auto;
+    height: auto;
     display: inline-block;
-    object-fit: contain;
     aspect-ratio: auto;
     transition: .4s ease-in-out;
 }
