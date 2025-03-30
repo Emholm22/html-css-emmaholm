@@ -1,0 +1,26 @@
+#productDetails .wrapper {
+    display: grid;
+    grid-template-columns: repeat(6, minmax(0, 1fr));
+    gap: 100px;
+}
+
+#productDetails .preview {
+    grid-column: span 4 / span 4;
+}
+
+#productDetails .images {
+    display: grid;
+    gap: 35px 43px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+}
+
+#productDetails .images a {
+    display: block;
+    overflow: hidden;
+}
+
+#productDetails .images img {
+    width: 100%;
+    display: block;
+    transition: .4s transform;
+}
