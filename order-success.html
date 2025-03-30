@@ -1,0 +1,176 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="order-success.html">
+
+    </head>
+    <body>
+        <header class="has-divider">
+            <div id="topHeader">
+                <div class="container">
+                    <div class="header-parent">
+                        <a href="index.html">
+                            <img src="icons/home.svg" alt="home">
+                        </a>
+                        <button>
+                            <img src="icons/search.svg" alt="search">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="navbar">
+                <div class="container">
+                    <div class="wrapper">
+                        <a href="/" class="logo">
+                            <img src="logo/rainydays-whitemode.svg" alt="rainydays logo">
+                        </a>
+
+                        <ul class="menu">
+                            <li class="link-item"><a class="link" href="productpage.html">NEW</a></li>
+                            <li class="link-item"><a class="link" href="productpage.html">MEN</a></li>
+                            <li class="link-item"><a class="link" href="productpage.html">WOMEN</a></li>
+                            <li class="link-item"><a class="link" href="#">ABOUT</a></li>
+                            <li class="link-item"><a class="link icon" href="#"><img src="icons/user.svg" alt="USER"></a></li>
+                            <li class="link-item"><a class="link icon small-screen" href="#"><img src="icons/heart.svg" alt="HEART"></a></li>
+                            <li class="link-item"><a class="link icon small-screen" href="cart.html"><img src="icons/cart.svg" alt="CART"></a></li>
+                            <li>
+                                <button class="sidebar-button">
+                                    <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 1.75H33" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                                        <path d="M2 11.75H33" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                                        <path d="M2 21.75H33" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                            
+                                </button>
+                            </li>
+                        </ul>  
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="sidebar">
+            <div class="header">
+                <button class="sidebar-close">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.53979 2L24.4601 23.9203" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M23.9203 2L1.99998 23.9203" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </button>                            
+            </div>
+            <ul class="menu-mobile">
+                <li class="link-item"><a class="link" href="productpage.html">NEW</a></li>
+                <li class="link-item"><a class="link" href="productpage.html">MEN</a></li>
+                <li class="link-item"><a class="link" href="productpage.html">WOMEN</a></li>
+                <li class="link-item"><a class="link" href="#">ABOUT</a></li>
+                <li class="link-item"><a class="link icon" href="#"><img src="icons/user.svg" alt="USER"></a></li>
+            </ul>  
+        </div>
+                    
+       
+        <section id="orderSuccess">
+            <div class="overlay">
+                <div class="content">
+                    <div class="success-icon">
+                        <svg width="90" height="90" viewBox="0 0 90 90" fill="none" xmlns="http://www.w3.org/2000/svg">
+                            <path d="M64.397 31.9876C64.717 32.3073 64.9709 32.687 65.1442 33.1049C65.3174 33.5228 65.4066 33.9707 65.4066 34.4231C65.4066 34.8754 65.3174 35.3234 65.1442 35.7413C64.9709 36.1592 64.717 36.5388 64.397 36.8585L40.3008 60.9547C39.9811 61.2747 39.6015 61.5286 39.1836 61.7018C38.7657 61.8751 38.3178 61.9642 37.8654 61.9642C37.413 61.9642 36.9651 61.8751 36.5472 61.7018C36.1293 61.5286 35.7497 61.2747 35.43 60.9547L25.103 50.6277C24.4571 49.9818 24.0943 49.1058 24.0943 48.1923C24.0943 47.2788 24.4571 46.4028 25.103 45.7569C25.749 45.1109 26.625 44.7481 27.5385 44.7481C28.4519 44.7481 29.328 45.1109 29.9739 45.7569L37.8654 53.6527L59.5261 31.9876C59.8458 31.6676 60.2255 31.4137 60.6433 31.2405C61.0612 31.0672 61.5092 30.9781 61.9615 30.9781C62.4139 30.9781 62.8619 31.0672 63.2797 31.2405C63.6976 31.4137 64.0773 31.6676 64.397 31.9876ZM89.5 44.75C89.5 53.6007 86.8755 62.2527 81.9583 69.6117C77.0411 76.9708 70.0521 82.7066 61.8751 86.0936C53.6981 89.4806 44.7004 90.3668 36.0197 88.6401C27.3391 86.9134 19.3654 82.6514 13.107 76.393C6.84859 70.1346 2.58657 62.1609 0.859879 53.4803C-0.86681 44.7996 0.0193895 35.8019 3.40641 27.6249C6.79343 19.4479 12.5291 12.4589 19.8882 7.54173C27.2473 2.62454 35.8993 0 44.75 0C56.6146 0.0125292 67.9897 4.73127 76.3792 13.1208C84.7687 21.5103 89.4875 32.8854 89.5 44.75ZM82.6154 44.75C82.6154 37.2609 80.3946 29.94 76.2339 23.7131C72.0732 17.4862 66.1595 12.6329 59.2405 9.76694C52.3215 6.901 44.708 6.15114 37.3628 7.61219C30.0177 9.07323 23.2707 12.6796 17.9751 17.9751C12.6796 23.2707 9.07325 30.0177 7.61221 37.3628C6.15116 44.708 6.90102 52.3215 9.76696 59.2404C12.6329 66.1594 17.4862 72.0732 23.7131 76.2339C29.9401 80.3946 37.2609 82.6154 44.75 82.6154C54.789 82.604 64.4136 78.6109 71.5123 71.5123C78.611 64.4136 82.604 54.789 82.6154 44.75Z" fill="#021E25"/>
+                        </svg>
+                        <h2>Thank You</h2>
+                        <h3>Your Payment Was Successful</h3>
+                        <p>An order confirmation will be sent to your registered email shortly</p>
+                        <div>
+                            <button>
+                                Back to Homepage
+                            </button>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container">
+                <div class="wrapper">
+                    <a href="/" class="logo">
+                        <img src="logo/rainydays-darkmode.png" alt="logo">
+                    </a>
+
+                    <div class="menu">
+                        <h6>HELP</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">Customer Support</a></li>
+                            <li class="link-item"><a href="#" class="link">General FAQ</a></li>
+                            <li class="link-item"><a href="#" class="link">Contact Us</a></li>
+                            <li class="link-item"><a href="#" class="link">Shipping and Delivery</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h6>MY ACCOUNT</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">Log in/Sign up</a></li>
+                            <li class="link-item"><a href="#" class="link">Order Tracking</a></li>
+                            <li class="link-item"><a href="#" class="link">Returns and Refunds</a></li>
+                            <li class="link-item"><a href="#" class="link">Product Care</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h6>MY ACCOUNT</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">Log in/Sign up</a></li>
+                            <li class="link-item"><a href="#" class="link">Order Tracking</a></li>
+                            <li class="link-item"><a href="#" class="link">Returns and Refunds</a></li>
+                            <li class="link-item"><a href="#" class="link">Product Care</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h6>ABOUT</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">The Brand</a></li>
+                            <li class="link-item"><a href="#" class="link">Sustainability</a></li>
+                            <li class="link-item"><a href="#" class="link">Responsibility</a></li>
+                            <li class="link-item"><a href="#" class="link">Press and Media</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h6>CATEGORIES</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">New</a></li>
+                            <li class="link-item"><a href="#" class="link">Men</a></li>
+                            <li class="link-item"><a href="#" class="link">Women</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="connect">
+                        <div class="title">CONNECT WITH US</div>
+                        <form action="#">
+                            <input type="email" name="email" id="connectEmail">
+                            <button>
+                                <span>SIGN UP</span>
+                            </button>
+                        </form>
+
+                        <div class="socials">
+                            <a href="#">
+                                <img src="icons/social-instagram.svg" alt="instagram">
+                            </a>
+                            <a href="#">
+                                <img src="icons/social-youtube.svg" alt="youtube">
+                            </a>
+                            <a href="#">
+                                <img src="icons/social-x.svg" alt="twitter/x">
+                            </a>
+                            <a href="#">
+                                <img src="icons/social-tiktok.svg" alt="tiktok">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
