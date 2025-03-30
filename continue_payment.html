@@ -1,0 +1,331 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+
+        <link rel="stylesheet" href="css/main.css">
+        <link rel="stylesheet" href="css/payment.css">
+
+    </head>
+    <body>
+        <header class="has-divider">
+            <div id="topHeader">
+                <div class="container">
+                    <div class="header-parent">
+                        <a href="index.html">
+                            <img src="icons/home.svg" alt="home">
+                        </a>
+                        <button>
+                            <img src="icons/search.svg" alt="search">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="navbar">
+                <div class="container">
+                    <div class="wrapper">
+                        <a href="/" class="logo">
+                            <img src="logo/rainydays-whitemode.svg" alt="rainydays logo">
+                        </a>
+
+                        <ul class="menu">
+                            <li class="link-item"><a class="link" href="productpage.html">NEW</a></li>
+                            <li class="link-item"><a class="link" href="/productpage.html">MEN</a></li>
+                            <li class="link-item"><a class="link" href="/productpage.html">WOMEN</a></li>
+                            <li class="link-item"><a class="link" href="#">ABOUT</a></li>
+                            <li class="link-item"><a class="link icon" href="#"><img src="images/icons/user.svg" alt="USER"></a></li>
+                            <li class="link-item"><a class="link icon small-screen" href="#"><img src="images/icons/heart.svg" alt="HEART"></a></li>
+                            <li class="link-item"><a class="link icon small-screen" href="cart.html"><img src="icons/cart.svg" alt="CART"></a></li>
+                            <li>
+                                <button class="sidebar-button">
+                                    <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 1.75H33" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                                        <path d="M2 11.75H33" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                                        <path d="M2 21.75H33" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                            
+                                </button>
+                            </li>
+                        </ul>  
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="sidebar">
+            <div class="header">
+                <button class="sidebar-close">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.53979 2L24.4601 23.9203" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M23.9203 2L1.99998 23.9203" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </button>                            
+            </div>
+            <ul class="menu-mobile">
+                <li class="link-item"><a class="link" href="productpage.html">NEW</a></li>
+                <li class="link-item"><a class="link" href="/productpage.html">MEN</a></li>
+                <li class="link-item"><a class="link" href="/productpage.html">WOMEN</a></li>
+                <li class="link-item"><a class="link" href="#">ABOUT</a></li>
+                <li class="link-item"><a class="link icon" href="#"><img src="icons/user.svg" alt="USER"></a></li>
+            </ul>  
+        </div>
+
+        <section id="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a href="#">RAINYDAYS</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li>Checkout</li>
+                </ul>
+            </div>
+        </section>  
+
+        <section id="checkout">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="details">
+                        <div class="title">
+                            CHECKOUT
+                        </div>
+
+                        <form id="infoForm" action="#">
+                            <div class="email">
+                                <label for="email">Email</label>
+                                <input class="input" type="email" name="email" id="email" placeholder="Example@gmail.com">
+                            </div>
+
+                            <div class="shipping">
+                                <div class="title">
+                                    Shipping
+                                </div>
+                                <p class="sub-title">Shipping information</p>
+
+                                <div class="input-group">
+                                    <div class="input-item">
+                                        <label for="first_name">First Name:</label>
+                                        <input type="text" name="first_name" id="first_name" class="input" placeholder="Enter First Name">
+                                    </div>
+                                    <div class="input-item">
+                                        <label for="first_name">Last Name:</label>
+                                        <input type="text" name="first_name" id="first_name" class="input" placeholder="Enter Last Name">
+                                    </div>
+                                </div>
+
+                                <div class="input-item">
+                                    <label for="country">Country:</label>
+                                    <select name="country" id="country" class="input">
+                                        <option>Select Country</option>
+                                        <option>United State</option>
+                                        <option>France</option>
+                                        <option>Japan</option>
+                                        <option>Bangladesh</option>
+                                    </select>
+                                </div>
+                                
+                                <div class="input-item">
+                                    <label for="full_address">Full Address:</label>
+                                    <input type="text" name="full_address" id="full_address" class="input">
+                                </div>
+                                
+                                <div class="input-item">
+                                    <label for="additional_information">Additional Information:</label>
+                                    <input type="text" name="additional_information" id="additional_information" class="input">
+                                </div>
+
+                                <div class="input-group">
+                                    <div class="input-item">
+                                        <label for="poste_code">Poste Code:</label>
+                                        <input type="text" name="poste_code" id="poste_code" class="input">
+                                    </div>
+                                    <div class="input-item">
+                                        <label for="city">City:</label>
+                                        <input type="text" name="city" id="city" class="input">
+                                    </div>
+                                </div>
+
+                                <div class="input-item">
+                                    <label for="city">Phone number:</label>
+                                    <input type="text" name="phone_number" id="phone_number" class="input">
+                                </div>
+
+                                <div class="submit">
+                                    <button type="submit">
+                                        Continue to Payment
+                                    </button>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="summary">
+                        <div class="header">
+                            Order summary (1 item)
+                        </div>
+
+                        <div class="items">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="products/item-1.png" alt="">
+                                </div>
+                                <div class="item-details">
+                                    <div class="item-name">
+                                        BETA DOWN JACKET WOMEN’S
+                                    </div>
+                                    <div class="item-category">
+                                        Women’s, Medium
+                                    </div>
+
+                                    <div class="item-meta">
+                                        <div class="quantity">
+                                            Quantity: 1
+                                        </div>
+                                        <div class="price">
+                                            £175.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calculations">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Subtoal:</td>
+                                        <td>£175.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping:</td>
+                                        <td>Free</td>
+                                    </tr>
+                                    <tr class="total">
+                                        <td>Total:</td>
+                                        <td>£175.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="conditions">
+                            <div class="condition">
+                                <div class="icon">
+                                    <img src="icons/free-shipping.svg" alt="free shipping">
+                                </div>
+
+                                <p>Free Shipping</p>
+                            </div>
+                            <div class="condition">
+                                <div class="icon">
+                                    <img src="icons/free-returns.svg" alt="free shipping">
+                                </div>
+
+                                <p>Free Returns</p>
+                            </div>
+                            <div class="condition">
+                                <div class="icon">
+                                    <img src="icons/limited-warranty.svg" alt="free shipping">
+                                </div>
+
+                                <p>Limited Warranty</p>
+                            </div>
+                        </div>
+
+                        <div class="help">
+                            <div class="help-title">
+                                Need help with your order?
+                            </div>
+                            <ul>
+                                <li>8am - 4pm, Monday to Saturday</li>
+                                <li>Call 004478784003</li>
+                                <li>Chat with us on Whatsapp</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+        <footer id="footer">
+            <div class="container">
+                <div class="wrapper">
+                    <a href="/" class="logo">
+                        <img src="logo/rainydays-darkmode.png" alt="logo">
+                    </a>
+
+                    <div class="menu">
+                        <h6>HELP</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">Customer Support</a></li>
+                            <li class="link-item"><a href="#" class="link">General FAQ</a></li>
+                            <li class="link-item"><a href="#" class="link">Contact Us</a></li>
+                            <li class="link-item"><a href="#" class="link">Shipping and Delivery</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h6>MY ACCOUNT</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">Log in/Sign up</a></li>
+                            <li class="link-item"><a href="#" class="link">Order Tracking</a></li>
+                            <li class="link-item"><a href="#" class="link">Returns and Refunds</a></li>
+                            <li class="link-item"><a href="#" class="link">Product Care</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h6>MY ACCOUNT</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">Log in/Sign up</a></li>
+                            <li class="link-item"><a href="#" class="link">Order Tracking</a></li>
+                            <li class="link-item"><a href="#" class="link">Returns and Refunds</a></li>
+                            <li class="link-item"><a href="#" class="link">Product Care</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h6>ABOUT</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">The Brand</a></li>
+                            <li class="link-item"><a href="#" class="link">Sustainability</a></li>
+                            <li class="link-item"><a href="#" class="link">Responsibility</a></li>
+                            <li class="link-item"><a href="#" class="link">Press and Media</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h6>CATEGORIES</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">New</a></li>
+                            <li class="link-item"><a href="#" class="link">Men</a></li>
+                            <li class="link-item"><a href="#" class="link">Women</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="connect">
+                        <div class="title">CONNECT WITH US</div>
+                        <form action="#">
+                            <input type="email" name="email" id="connectEmail">
+                            <button>
+                                <span>SIGN UP</span>
+                            </button>
+                        </form>
+
+                        <div class="socials">
+                            <a href="#">
+                                <img src="icons/social-instagram.svg" alt="instagram">
+                            </a>
+                            <a href="#">
+                                <img src="icons/social-youtube.svg" alt="youtube">
+                            </a>
+                            <a href="#">
+                                <img src="icons/social-x.svg" alt="twitter/x">
+                            </a>
+                            <a href="#">
+                                <img src="icons/social-tiktok.svg" alt="tiktok">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
