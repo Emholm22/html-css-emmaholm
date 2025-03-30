@@ -248,6 +248,11 @@
     flex-direction: column;
     height: 100%;
 }
+#newSeason .product-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 20px;
+}
 
 #newSeason .product .photo {
     display: block;
