@@ -69,7 +69,7 @@
     padding-top: 36px;
 }
 
-#checkout .submit button {
+#checkout .submit a {
     padding: 16px;
     background: rgb(var(--color-primary));
     color: rgb(var(--color-white));
@@ -84,16 +84,16 @@
     border: 2px solid rgb(var(--color-primary));
 }
 
-#checkout .submit button svg {
+#checkout .submit a svg {
     fill: rgb(var(--color-white));
 }
 
-#checkout .submit button:hover {
+#checkout .submit a:hover {
     color: rgb(var(--color-primary));
     background: rgb(var(--color-white));
 }
 
-#checkout .submit button:hover svg {
+#checkout .submit a:hover svg {
     fill: rgb(var(--color-primary));
 }
 
