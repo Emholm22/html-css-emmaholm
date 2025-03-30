@@ -1,0 +1,359 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <title>Home</title>
+
+        <link rel="stylesheet" href="main.css">
+        <link rel="stylesheet" href="payment.css">
+
+    </head>
+    <body>
+        <header class="has-divider">
+            <div id="topHeader">
+                <div class="container">
+                    <div class="header-parent">
+                        <a href="/">
+                            <img src="icons/home.svg" alt="home">
+                        </a>
+                        <button>
+                            <img src="icons/search.svg" alt="search">
+                        </button>
+                    </div>
+                </div>
+            </div>
+
+            <nav id="navbar">
+                <div class="container">
+                    <div class="wrapper">
+                        <a href="/" class="logo">
+                            <img src="logo/rainydays-whitemode.svg" alt="rainydays logo">
+                        </a>
+
+                        <ul class="menu">
+                            <li class="link-item"><a class="link" href="#">NEW</a></li>
+                            <li class="link-item"><a class="link" href="/productpage.html">MEN</a></li>
+                            <li class="link-item"><a class="link" href="/productpage.html">WOMEN</a></li>
+                            <li class="link-item"><a class="link" href="#">ABOUT</a></li>
+                            <li class="link-item"><a class="link icon" href="#"><img src="icons/user.svg" alt="USER"></a></li>
+                            <li class="link-item"><a class="link icon small-screen" href="#"><img src="icons/heart.svg" alt="HEART"></a></li>
+                            <li class="link-item"><a class="link icon small-screen" href="/cart.html"><img src="icons/cart.svg" alt="CART"></a></li>
+                            <li>
+                                <button class="sidebar-button">
+                                    <svg width="35" height="24" viewBox="0 0 35 24" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M2 1.75H33" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                                        <path d="M2 11.75H33" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                                        <path d="M2 21.75H33" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                                    </svg>                            
+                                </button>
+                            </li>
+                        </ul>  
+                    </div>
+                </div>
+            </nav>
+        </header>
+
+        <div class="sidebar">
+            <div class="header">
+                <button class="sidebar-close">
+                    <svg width="26" height="26" viewBox="0 0 26 26" fill="none" xmlns="http://www.w3.org/2000/svg">
+                        <path d="M2.53979 2L24.4601 23.9203" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                        <path d="M23.9203 2L1.99998 23.9203" stroke="#021E25" stroke-width="2.5" stroke-linecap="round"/>
+                    </svg>
+                </button>                            
+            </div>
+            <ul class="menu-mobile">
+                <li class="link-item"><a class="link" href="#">NEW</a></li>
+                <li class="link-item"><a class="link" href="/productpage.html">MEN</a></li>
+                <li class="link-item"><a class="link" href="/productpage.html">WOMEN</a></li>
+                <li class="link-item"><a class="link" href="#">ABOUT</a></li>
+                <li class="link-item"><a class="link icon" href="#"><img src="icons/user.svg" alt="USER"></a></li>
+            </ul>  
+        </div>
+
+        <section id="breadcrumb">
+            <div class="container">
+                <ul>
+                    <li><a href="#">RAINYDAYS</a></li>
+                    <li><a href="#">Cart</a></li>
+                    <li>Checkout</li>
+                </ul>
+            </div>
+        </section>  
+
+        <section id="checkout">
+            <div class="container">
+                <div class="wrapper">
+                    <div class="details">
+                        <div class="title">
+                            CHECKOUT
+                        </div>
+
+                        <form id="paymentForm" action="#">
+                            <div class="sub-title">
+                                Payment
+                            </div>
+
+                            <div class="agreement">
+                                <label class="checkbox">
+                                    <input type="checkbox" name="accept_terms" id="accept_terms">
+                                    <span></span>
+                                </label>
+
+                                <label for="accept_terms" class="accept-terms">
+                                    *I agree to the Terms & Conditions in order to complete this <br/> purchase.
+                                </label>
+                            </div>
+
+                            <div class="credit-debit-card">
+                                <div class="form-title">
+                                    <svg width="50" height="36" viewBox="0 0 50 36" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                        <path d="M46.4286 0H3.57143C2.62423 0 1.71582 0.376274 1.04605 1.04605C0.376274 1.71582 0 2.62423 0 3.57143V32.1429C0 33.0901 0.376274 33.9985 1.04605 34.6682C1.71582 35.338 2.62423 35.7143 3.57143 35.7143H46.4286C47.3758 35.7143 48.2842 35.338 48.954 34.6682C49.6237 33.9985 50 33.0901 50 32.1429V3.57143C50 2.62423 49.6237 1.71582 48.954 1.04605C48.2842 0.376274 47.3758 0 46.4286 0ZM46.4286 3.57143V8.92857H3.57143V3.57143H46.4286ZM46.4286 32.1429H3.57143V12.5H46.4286V32.1429ZM42.8571 26.7857C42.8571 27.2593 42.669 27.7135 42.3341 28.0484C41.9992 28.3833 41.545 28.5714 41.0714 28.5714H33.9286C33.455 28.5714 33.0008 28.3833 32.6659 28.0484C32.331 27.7135 32.1429 27.2593 32.1429 26.7857C32.1429 26.3121 32.331 25.8579 32.6659 25.523C33.0008 25.1881 33.455 25 33.9286 25H41.0714C41.545 25 41.9992 25.1881 42.3341 25.523C42.669 25.8579 42.8571 26.3121 42.8571 26.7857ZM28.5714 26.7857C28.5714 27.2593 28.3833 27.7135 28.0484 28.0484C27.7135 28.3833 27.2593 28.5714 26.7857 28.5714H23.2143C22.7407 28.5714 22.2865 28.3833 21.9516 28.0484C21.6167 27.7135 21.4286 27.2593 21.4286 26.7857C21.4286 26.3121 21.6167 25.8579 21.9516 25.523C22.2865 25.1881 22.7407 25 23.2143 25H26.7857C27.2593 25 27.7135 25.1881 28.0484 25.523C28.3833 25.8579 28.5714 26.3121 28.5714 26.7857Z" fill="black"/>
+                                    </svg>     
+                                    
+                                    Credit or debit card
+                                </div>
+
+                                <div class="form-body">
+                                    <div class="input-item">
+                                        <label for="card_number">Card number:</label>
+                                        <input type="text" name="card_number" id="card_number" class="input">
+                                    </div>
+                                    <div class="input-group">
+                                        <div class="input-item">
+                                            <label for="expiry_date">Expiry date:</label>
+                                            <input type="text" name="expiry_date" id="expiry_date" class="input">
+                                        </div>
+                                        <div class="input-item">
+                                            <label for="security_code">Security code:</label>
+                                            <input type="text" name="security_code" id="security_code" class="input">
+                                        </div>
+                                    </div>
+                                    <div class="input-item">
+                                        <label for="name_on_card">Name on card:</label>
+                                        <input type="text" name="name_on_card" id="name_on_card" class="input">
+                                    </div>
+
+                                    <div class="submit">
+                                        <button type="submit">
+                                            PAY
+                                            
+                                            <svg width="25" height="29" viewBox="0 0 25 29" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M22.9167 9.375H18.75V6.25C18.75 4.5924 18.0915 3.00268 16.9194 1.83058C15.7473 0.65848 14.1576 0 12.5 0C10.8424 0 9.25268 0.65848 8.08058 1.83058C6.90848 3.00268 6.25 4.5924 6.25 6.25V9.375H2.08333C1.5308 9.375 1.00089 9.59449 0.610194 9.98519C0.219493 10.3759 0 10.9058 0 11.4583V26.0417C0 26.5942 0.219493 27.1241 0.610194 27.5148C1.00089 27.9055 1.5308 28.125 2.08333 28.125H22.9167C23.4692 28.125 23.9991 27.9055 24.3898 27.5148C24.7805 27.1241 25 26.5942 25 26.0417V11.4583C25 10.9058 24.7805 10.3759 24.3898 9.98519C23.9991 9.59449 23.4692 9.375 22.9167 9.375ZM8.33333 6.25C8.33333 5.14493 8.77232 4.08512 9.55372 3.30372C10.3351 2.52232 11.3949 2.08333 12.5 2.08333C13.6051 2.08333 14.6649 2.52232 15.4463 3.30372C16.2277 4.08512 16.6667 5.14493 16.6667 6.25V9.375H8.33333V6.25ZM22.9167 26.0417H2.08333V11.4583H22.9167V26.0417Z"/>
+                                            </svg>
+                                                
+                                        </button>
+                                    </div>
+                                </div>
+                            </div>
+
+                            <div class="cash-on-delivery">
+                                <div class="payment-type">
+                                    <label class="radio">
+                                        <input type="radio" name="payment_type" id="cash_on_delivery">
+                                        <span></span>
+                                    </label>
+    
+                                    <label for="cash_on_delivery" class="payment-type-label">
+                                        <div class="payment-type-icon">
+                                            <svg width="41" height="32" viewBox="0 0 41 32" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M2.23611 16.3981C1.84074 16.3981 1.46157 16.2411 1.182 15.9615C0.90243 15.682 0.74537 15.3028 0.74537 14.9074C0.74537 14.512 0.90243 14.1329 1.182 13.8533C1.46157 13.5737 1.84074 13.4167 2.23611 13.4167H7.4537C7.84907 13.4167 8.22825 13.2596 8.50782 12.98C8.78738 12.7005 8.94444 12.3213 8.94444 11.9259C8.94444 11.5306 8.78738 11.1514 8.50782 10.8718C8.22825 10.5922 7.84907 10.4352 7.4537 10.4352H4.47222C3.28612 10.4352 2.14859 9.96401 1.30988 9.1253C0.471179 8.2866 0 7.14907 0 5.96296C0 4.77686 0.471179 3.63933 1.30988 2.80062C2.14859 1.96192 3.28612 1.49074 4.47222 1.49074C4.47222 1.09537 4.62928 0.716196 4.90885 0.436628C5.18842 0.15706 5.56759 0 5.96296 0C6.35833 0 6.73751 0.15706 7.01708 0.436628C7.29664 0.716196 7.4537 1.09537 7.4537 1.49074H8.94444C9.33981 1.49074 9.71899 1.6478 9.99856 1.92737C10.2781 2.20694 10.4352 2.58611 10.4352 2.98148C10.4352 3.37685 10.2781 3.75603 9.99856 4.03559C9.71899 4.31516 9.33981 4.47222 8.94444 4.47222H4.47222C4.07685 4.47222 3.69768 4.62928 3.41811 4.90885C3.13854 5.18842 2.98148 5.56759 2.98148 5.96296C2.98148 6.35833 3.13854 6.73751 3.41811 7.01708C3.69768 7.29664 4.07685 7.4537 4.47222 7.4537H7.4537C8.63981 7.4537 9.77734 7.92488 10.616 8.76359C11.4547 9.60229 11.9259 10.7398 11.9259 11.9259C11.9259 13.112 11.4547 14.2496 10.616 15.0883C9.77734 15.927 8.63981 16.3981 7.4537 16.3981C7.4537 16.7935 7.29664 17.1727 7.01708 17.4523C6.73751 17.7318 6.35833 17.8889 5.96296 17.8889C5.56759 17.8889 5.18842 17.7318 4.90885 17.4523C4.62928 17.1727 4.47222 16.7935 4.47222 16.3981H2.23611ZM40.25 2.98148V28.3241C40.25 29.1148 39.9359 29.8732 39.3767 30.4323C38.8176 30.9914 38.0593 31.3056 37.2685 31.3056H4.47222C3.68148 31.3056 2.92313 30.9914 2.364 30.4323C1.80486 29.8732 1.49074 29.1148 1.49074 28.3241V20.8704C1.49074 20.475 1.6478 20.0958 1.92737 19.8163C2.20694 19.5367 2.58611 19.3796 2.98148 19.3796C3.37685 19.3796 3.75603 19.5367 4.03559 19.8163C4.31516 20.0958 4.47222 20.475 4.47222 20.8704V28.3241H26.8333V22.3611H11.9259C11.5306 22.3611 11.1514 22.2041 10.8718 21.9245C10.5922 21.6449 10.4352 21.2657 10.4352 20.8704C10.4352 20.475 10.5922 20.0958 10.8718 19.8163C11.1514 19.5367 11.5306 19.3796 11.9259 19.3796H26.8333V13.4167H16.3981C16.0028 13.4167 15.6236 13.2596 15.344 12.98C15.0645 12.7005 14.9074 12.3213 14.9074 11.9259C14.9074 11.5306 15.0645 11.1514 15.344 10.8718C15.6236 10.5922 16.0028 10.4352 16.3981 10.4352H37.2685V4.47222H14.9074C14.512 4.47222 14.1329 4.31516 13.8533 4.03559C13.5737 3.75603 13.4167 3.37685 13.4167 2.98148C13.4167 2.58611 13.5737 2.20694 13.8533 1.92737C14.1329 1.6478 14.512 1.49074 14.9074 1.49074H38.7593C39.1546 1.49074 39.5338 1.6478 39.8134 1.92737C40.0929 2.20694 40.25 2.58611 40.25 2.98148ZM29.8148 19.3796H37.2685V13.4167H29.8148V19.3796ZM37.2685 28.3241V22.3611H29.8148V28.3241H37.2685Z" fill="black"/>
+                                            </svg>
+                                        </div>                       
+                                        
+                                        Invoice
+                                    </label>
+                                </div>
+                            </div>
+                            <div class="paypal">
+                                <div class="payment-type">
+                                    <label class="radio">
+                                        <input type="radio" name="payment_type" id="paypal">
+                                        <span></span>
+                                    </label>
+    
+                                    <label for="paypal" class="payment-type-label">
+                                        <div class="payment-type-icon">
+                                            <svg width="33" height="35" viewBox="0 0 33 35" fill="none" xmlns="http://www.w3.org/2000/svg">
+                                                <path d="M30.8049 11.3874C29.9257 10.2574 28.7932 9.34984 27.4987 8.73789C27.3876 6.38348 26.3742 4.16227 24.6688 2.53524C22.9634 0.908215 20.697 0.000325642 18.34 0H8.51479C7.93053 8.84621e-05 7.36306 0.195461 6.90257 0.555065C6.44209 0.91467 6.11502 1.41787 5.97333 1.98469L0.0782051 25.5652C-0.0183395 25.9514 -0.0255947 26.3546 0.0569907 26.7441C0.139576 27.1335 0.30983 27.499 0.554822 27.8129C0.799813 28.1267 1.1131 28.3805 1.47088 28.5552C1.82867 28.7298 2.22154 28.8206 2.61966 28.8206H7.12288L6.63162 30.8053C6.53514 31.1913 6.52783 31.5942 6.61024 31.9834C6.69264 32.3726 6.8626 32.7379 7.10723 33.0517C7.35185 33.3654 7.66472 33.6194 8.02209 33.7942C8.37946 33.969 8.77196 34.0602 9.1698 34.0607H14.328C14.9117 34.0599 15.4784 33.8642 15.9383 33.5047C16.3981 33.1451 16.7247 32.6423 16.8662 32.076L18.34 26.2006H23.5801C25.2982 26.2005 26.9817 25.7178 28.4387 24.8075C29.8958 23.8972 31.0678 22.5958 31.8212 21.0518C32.5746 19.5077 32.8791 17.7831 32.7 16.0744C32.5209 14.3657 31.8654 12.7417 30.8082 11.3874H30.8049ZM2.61966 26.2006L8.51479 2.62006H18.34C19.8641 2.61962 21.3407 3.15072 22.5154 4.12185C23.6901 5.09299 24.4894 6.44337 24.7755 7.94041C24.3792 7.88809 23.9799 7.86129 23.5801 7.86017H14.4099C13.8254 7.85989 13.2575 8.0551 12.7967 8.41473C12.3359 8.77436 12.0086 9.27777 11.8668 9.84486L7.78117 26.2006H2.61966ZM24.7264 10.5818C24.7133 10.6407 24.7018 10.6997 24.6871 10.7586C24.3347 12.1754 23.5184 13.4336 22.3682 14.3327C21.218 15.2319 19.8 15.7204 18.34 15.7203H13.0999L14.4099 10.4802H23.5801C23.9644 10.4804 24.348 10.5144 24.7264 10.5818ZM29.9272 18.6188C29.5748 20.0356 28.7585 21.2937 27.6083 22.1929C26.4581 23.0921 25.0401 23.5805 23.5801 23.5805H18.34C17.7557 23.5806 17.1883 23.776 16.7278 24.1356C16.2673 24.4952 15.9402 24.9984 15.7985 25.5652L14.3248 31.4407H9.1698L12.4449 18.3404H18.34C20.3543 18.341 22.3125 17.6771 23.9112 16.4518C25.51 15.2264 26.6598 13.5079 27.1827 11.5626C27.7742 11.9546 28.2984 12.4395 28.7351 12.9988C29.3513 13.7815 29.7795 14.6953 29.9868 15.6697C30.1941 16.644 30.1748 17.653 29.9305 18.6188H29.9272Z" fill="black"/>
+                                            </svg>
+                                        </div>                                                                   
+                                        
+                                        PayPal
+                                    </label>
+                                </div>
+                            </div>
+                        </form>
+                    </div>
+
+                    <div class="summary">
+                        <div class="header">
+                            Order summary (1 item)
+                        </div>
+
+                        <div class="items">
+                            <div class="item">
+                                <div class="image">
+                                    <img src="products/item-1.png" alt="cart item">
+                                </div>
+                                <div class="item-details">
+                                    <div class="item-name">
+                                        BETA DOWN JACKET WOMEN’S
+                                    </div>
+                                    <div class="item-category">
+                                        Women’s, Medium
+                                    </div>
+
+                                    <div class="item-meta">
+                                        <div class="quantity">
+                                            Quantity: 1
+                                        </div>
+                                        <div class="price">
+                                            £175.00
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                        <div class="calculations">
+                            <table>
+                                <tbody>
+                                    <tr>
+                                        <td>Subtoal:</td>
+                                        <td>£175.00</td>
+                                    </tr>
+                                    <tr>
+                                        <td>Shipping:</td>
+                                        <td>Free</td>
+                                    </tr>
+                                    <tr class="total">
+                                        <td>Total:</td>
+                                        <td>£175.00</td>
+                                    </tr>
+                                </tbody>
+                            </table>
+                        </div>
+
+                        <div class="conditions">
+                            <div class="condition">
+                                <div class="icon">
+                                    <img src="icons/free-shipping.svg" alt="free shipping">
+                                </div>
+
+                                <p>Free Shipping</p>
+                            </div>
+                            <div class="condition">
+                                <div class="icon">
+                                    <img src="icons/free-returns.svg" alt="free returns">
+                                </div>
+
+                                <p>Free Returns</p>
+                            </div>
+                            <div class="condition">
+                                <div class="icon">
+                                    <img src="icons/limited-warranty.svg" alt="free shipping">
+                                </div>
+
+                                <p>Limited Warranty</p>
+                            </div>
+                        </div>
+
+                        <div class="help">
+                            <div class="help-title">
+                                Need help with your order?
+                            </div>
+                            <ul>
+                                <li>8am - 4pm, Monday to Saturday</li>
+                                <li>Call 004478784003</li>
+                                <li>Chat with us on Whatsapp</li>
+                            </ul>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </section>
+       
+
+        <footer id="footer">
+            <div class="container">
+                <div class="wrapper">
+                    <a href="/" class="logo">
+                        <img src="logo/rainydays-darkmode.png" alt="logo">
+                    </a>
+
+                    <div class="menu">
+                        <h6>HELP</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">Customer Support</a></li>
+                            <li class="link-item"><a href="#" class="link">General FAQ</a></li>
+                            <li class="link-item"><a href="#" class="link">Contact Us</a></li>
+                            <li class="link-item"><a href="#" class="link">Shipping and Delivery</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h6>MY ACCOUNT</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">Log in/Sign up</a></li>
+                            <li class="link-item"><a href="#" class="link">Order Tracking</a></li>
+                            <li class="link-item"><a href="#" class="link">Returns and Refunds</a></li>
+                            <li class="link-item"><a href="#" class="link">Product Care</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h6>MY ACCOUNT</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">Log in/Sign up</a></li>
+                            <li class="link-item"><a href="#" class="link">Order Tracking</a></li>
+                            <li class="link-item"><a href="#" class="link">Returns and Refunds</a></li>
+                            <li class="link-item"><a href="#" class="link">Product Care</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h6>ABOUT</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">The Brand</a></li>
+                            <li class="link-item"><a href="#" class="link">Sustainability</a></li>
+                            <li class="link-item"><a href="#" class="link">Responsibility</a></li>
+                            <li class="link-item"><a href="#" class="link">Press and Media</a></li>
+                        </ul>
+                    </div>
+                    <div class="menu">
+                        <h6>CATEGORIES</h6>
+                        <ul class="links">
+                            <li class="link-item"><a href="#" class="link">New</a></li>
+                            <li class="link-item"><a href="#" class="link">Men</a></li>
+                            <li class="link-item"><a href="#" class="link">Women</a></li>
+                        </ul>
+                    </div>
+
+                    <div class="connect">
+                        <div class="title">CONNECT WITH US</div>
+                        <form action="#">
+                            <input type="email" name="email" id="connectEmail">
+                            <button>
+                                <span>SIGN UP</span>
+                            </button>
+                        </form>
+
+                        <div class="socials">
+                            <a href="#">
+                                <img src="icons/social-instagram.svg" alt="instagram">
+                            </a>
+                            <a href="#">
+                                <img src="icons/social-youtube.svg" alt="youtube">
+                            </a>
+                            <a href="#">
+                                <img src="icons/social-x.svg" alt="twitter/x">
+                            </a>
+                            <a href="#">
+                                <img src="icons/social-tiktok.svg" alt="tiktok">
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </footer>
+    </body>
+</html>
