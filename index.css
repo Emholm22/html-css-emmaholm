@@ -271,7 +271,7 @@
 #newSeason .product .photo {
     display: block;
     height: auto;
-    overflow: hidden;
+    overflow: visible;
 }
 
 #newSeason .product .photo img {
