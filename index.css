@@ -253,6 +253,17 @@
     grid-template-columns: repeat(4, 1fr);
     gap: 20px;
 }
+@media (max-width: 1024px) {
+    #newSeason .products-container {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+@media (max-width: 768px) {
+    #newSeason .products-container {
+        grid-template-columns: repeat(1, 1fr);
+    }
+}
 
 #newSeason .product .photo {
     display: block;
