@@ -152,3 +152,41 @@
 #productDetails .size-options input {
     display: none;
 }
+#productDetails .size-options label span {
+    width: 40px;
+    height: 40px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: rgb(var(--color-primary));
+    color: rgb(var(--color-white));
+    font-size: 20px;
+    font-weight: 500;
+    cursor: pointer;
+}
+
+#productDetails .size-options input:disabled ~ span {
+    text-decoration: line-through;
+    cursor: not-allowed;
+}
+
+#productDetails .size-options input:checked ~ span {
+    outline: 2px solid rgb(var(--color-primary));
+    outline-offset: 3px;
+}
+
+#productDetails .size .guide {
+    margin-top: 35px;
+}
+
+#productDetails .size .guide a {
+    font-size: 20px;
+    font-weight: 500;
+    color: rgb(var(--color-primary));
+    text-decoration: underline;
+    transition: .4s;
+}
+
+#productDetails .size .guide a:hover {
+    letter-spacing: .4px;
+}
