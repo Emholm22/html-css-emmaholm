@@ -197,3 +197,17 @@
     padding-top: 26px;
     padding-bottom: 28px;
 }
+#productDetails .add-to-cart button {
+    text-align: center;
+    display: inline-block;
+    width: 100%;
+    padding-top: 10px;
+    padding-bottom: 9px;
+    font-size: 36px;
+    font-family: var(--font-primary);
+    font-weight: 500;
+    color: rgb(var(--color-white));
+    background: rgb(var(--color-primary));
+    border: 2px solid rgb(var(--color-primary));
+    transition: .4s color;
+}
