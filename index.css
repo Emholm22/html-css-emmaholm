@@ -242,8 +242,8 @@
 
 #newSeason .product {
     display: flex;
-    flex: 0 1 calc(33.333% - 20px);
-    max-width: calc(33.333% - 20px);
+    flex: 0 1 calc(25% - 15px);
+    max-width: calc(25% - 15px);
     box-sizing: border-box;
     flex-direction: column;
     height: 100%;
