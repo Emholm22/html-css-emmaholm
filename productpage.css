@@ -1,0 +1,95 @@
+#banner {
+    margin-bottom: 50px;
+}
+#banner img {
+    width: 100%;
+}
+
+#filters {
+    background: rgb(var(--color-primary));
+    padding-top: 11px;
+    padding-bottom: 9px;
+    margin-bottom: 57px;
+    font-size: 32px;
+    color: white;
+}
+
+#filters button {
+    font-size: 32px;
+    color: white;
+    font-family: var(--font-primary);
+}
+
+#filters .wrapper {
+    display: flex;
+    justify-content: space-between;
+}
+
+#filters .left {
+    display: flex;
+    justify-content: center;
+    gap: 34px;
+}
+
+#filters .left div {
+    border-right: 2px solid white;
+    padding-right: 34px;
+}
+
+#filters .left div:last-child {
+    border-right: none;
+}
+
+#filters select {
+    font-size: 32px;
+    color: white;
+    background: rgb(var(--color-primary));
+    border: none;
+    font-family: var(--font-primary);
+    appearance: none;
+    outline: none;
+    width: 100%;
+}
+
+#filters .mobile-filter-toggle {
+    display: none;
+}
+
+.filter-sidebar {
+    position: fixed;
+    top: 0;
+    right: -400px;
+    width: 400px;
+    background: rgb(var(--color-white));
+    height: 100dvh;
+    transition: .4s;
+    max-width: 100%;
+    z-index: 99;
+}
+
+.filter-sidebar.active {
+    right: 0px;
+}
+
+.filter-sidebar .header {
+    padding: 15px;
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 25px;
+    font-weight: 600;
+}
+
+.filter-sidebar .content {
+    padding: 15px;
+    padding-top: 30px;
+}
+
+.filter-sidebar .filter select {
+    font-size: 25px;
+    font-family: var(--font-primary);
+    margin-bottom: 15px;
+    width: 100%;
+    border: 1px solid rgb(var(--color-primary));
+    padding: 5px;
+}
