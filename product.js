@@ -1,5 +1,5 @@
-import { getProduct } from "api.js";
-import { addToCart } from "storage.js";
+import { getProduct } from "./api.js";
+import { addToCart } from "./storage.js";
 
 const $ = (s) => document.querySelector(s);
 const set = (el, html) => { if (el) el.innerHTML = html; };
