@@ -81,129 +81,66 @@
                     <li>Beta Down Jacket</li>
                 </ul>
             </div>
-        </section>
-
-
+</section>
         <section id="productDetails">
-            <div class="container">
-                <div class="wrapper">
-                    <div class="preview">
-                        <div class="images" id="detailsGallery">
-                            <a href="products/beta-down-jacket-full.png">
-                                <img src="products/beta-down-jacket-full.png" alt="">
-                            </a>
-                            <a href="products/beta-down-jacket-front.png">
-                                <img src="products/beta-down-jacket-front.png" alt="">
-                            </a>
-                            <a href="products/beta-down-jacket-top.png">
-                                <img src="products/beta-down-jacket-top.png" alt="">
-                            </a>
-                            <a href="products/beta-down-jacket-side.png">
-                                <img src="products/beta-down-jacket-side.png" alt="">
-                            </a>
-                        </div>
+  <div class="container">
+    <div class="wrapper">
+      <div class="preview">
+        <!-- JS will inject images here -->
+        <div class="images" id="detailsGallery" aria-live="polite"></div>
 
-                        <div class="show-more">
-                            <button>
-                                Show More Images
-                            </button>
-                        </div>
-                    </div>
-                    <div class="details">
-                        <h2>BETA DOWN JACKET WOMEN’S</h2>
-                        <div>
-                            <span class="best-seller-badge">Best Seller</span>
-                        </div>
-                        <div class="rating">
-                            <img src="icons/rating-star-full.svg" alt="">
-                            <img src="icons/rating-star-full.svg" alt="">
-                            <img src="icons/rating-star-full.svg" alt="">
-                            <img src="icons/rating-star-full.svg" alt="">
-                            <img src="icons/rating-star-half.svg" alt="">
-                        </div>
-                        <div class="short-description">
-                            BETA DOWN - Waterproof, windproof, breathable rain jacket.
-                        </div>
-                        <div class="price">
-                            £175.00
-                        </div>
+        <div class="show-more">
+          <button id="showMoreBtn">Show More Images</button>
+        </div>
+      </div>
 
-                        <div class="color">
-                            <div class="color-title">
-                                Colour: Copper
-                            </div>
+      <div class="details">
+        <h2 id="productTitle"></h2>
 
-                            <div class="color-options">
-                                <label>
-                                    <input type="radio" name="color_selected" value="#71342A">
-                                    <span style="background: #71342A;"></span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="color_selected" value="#FE9349">
-                                    <span style="background: #FE9349;"></span>
-                                </label>
-                            </div>
-                        </div>
-                        <div class="size">
-                            <div class="size-title">
-                                Size:
-                            </div>
+        <div>
+          <span class="best-seller-badge" id="saleBadge" style="display:none;">On Sale</span>
+        </div>
 
-                            <div class="size-options">
-                                <label>
-                                    <input type="radio" name="size_selected" value="XS" disabled>
-                                    <span>XS</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="size_selected" value="S" disabled>
-                                    <span>S</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="size_selected" value="M">
-                                    <span>M</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="size_selected" value="L">
-                                    <span>L</span>
-                                </label>
-                                <label>
-                                    <input type="radio" name="size_selected" value="XL">
-                                    <span>XL</span>
-                                </label>
-                            </div>
+        <div class="rating">
+          <img src="icons/rating-star-full.svg" alt="">
+          <img src="icons/rating-star-full.svg" alt="">
+          <img src="icons/rating-star-full.svg" alt="">
+          <img src="icons/rating-star-full.svg" alt="">
+          <img src="icons/rating-star-half.svg" alt="">
+        </div>
 
-                            <div class="guide">
-                                <a href="#">Sizing Chart & Fit Guide</a>
-                            </div>
-                        </div>
+        <div class="short-description" id="shortDescription"></div>
 
-                        <div class="add-to-cart">
-                            <button>
-                                ADD TO CART
-                            </button>
-                        </div>
+        <div class="price" id="productPrice"></div>
 
-                        <div class="delivery">
-                            <div class="delivery-title">
-                                Delivery
-                            </div>
+        <div class="color">
+          <div class="color-title" id="colorTitle">Colour:</div>
+          <div class="color-options" id="colorOptions"></div>
+        </div>
 
-                            <p>Free shipping and returns</p>
-                        </div>
-                    </div>
-                </div>
+        <div class="size">
+          <div class="size-title">Size:</div>
+          <div class="size-options" id="sizeOptions"></div>
+          <div class="guide"><a href="#">Sizing Chart & Fit Guide</a></div>
+        </div>
 
-                <div class="detailed-description">
-                    <h3>BETA DOWN JACKET WOMEN’S</h3>
-                    <ul class="description">
-                        <li>Unleash adventure in any weather with our  Women’s Beta Down Lightweight Versatile GORE-TEX® Jacket.</li>
-                        <li>Designed for ultimate protection and performance, this jacket is crafted with 100% waterproof, windproof,</li>
-                        <li>and highly breathable GORE-TEX® fabric,</li>
-                        <li>keeping you dry and comfortable no matter the conditions.</li>
-                    </ul>
-                </div>
-            </div>
-        </section>
+        <div class="add-to-cart">
+          <button id="addToCartBtn">ADD TO CART</button>
+        </div>
+
+        <div class="delivery">
+          <div class="delivery-title">Delivery</div>
+          <p>Free shipping and returns</p>
+        </div>
+      </div>
+    </div>
+
+    <div class="detailed-description">
+      <h3 id="longTitle"></h3>
+      <ul class="description" id="longDescription"></ul>
+    </div>
+  </div>
+</section>    
         <footer id="footer">
             <div class="container">
                 <div class="wrapper">
@@ -283,5 +220,6 @@
                 </div>
             </div>
         </footer>
+<script type="module" src="product.js"></script>
      </body>
 </html>
