@@ -88,40 +88,11 @@
 
                     <div class="details">
                         <div class="header">
-                            <div class="first">My Cart (1 item)</div>
+                            <div class="first">My Cart (<span id="cartCount">0</span>items)</div>
                             <div class="second">Quantity</div>
                             <div class="third">Price</div>
                         </div>
-
-                        <div class="items">
-                            <div class="item">
-                                <div class="image">
-                                    <img src="images/products/cart/item-1.png" alt="">
-                                </div>
-                                <div class="cart-item-details">
-                                    <div class="first">
-                                        <div>
-                                            <div class="item-title">BETA DOWN JACKET WOMEN’S</div>
-                                            <div class="item-category">Women’s, Medium</div>
-                                        </div>
-                                    </div>
-                                    <div class="second">
-                                        <div class="item-qty">
-                                            <button class="inner-spin">-</button><input type="number" name="qty" value="1" step="1"><button class="outer-spin">+</button>
-                                        </div>
-                                    </div>
-                                    <div class="third">
-                                        <span>£175.00</span>
-                                    </div>
-                                    <div class="fourth">
-                                        <button class="item-remove">
-                                            Remove
-                                        </button>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-
+                        <div class="items" id="cartItems"></div>
                         <div class="suggestion">
                             Free shipping and returns
                         </div>
@@ -341,5 +312,6 @@
                 </div>
             </div>
         </footer>
+        <script type="module" src="checkout.js"></script>
     </body>
 </html>
