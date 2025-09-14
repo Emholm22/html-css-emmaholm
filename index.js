@@ -34,7 +34,7 @@ function card(p) {
   const badge = p.onSale ? `<span class="badge">Sale</span>` : "";
   return `
   <article class="product-card">
-    <a href="/product/index.html?id=${encodeURIComponent(p.id)}" aria-label="View ${p.title}">
+<a href="productdetail.html?id=${encodeURIComponent(p.id)}" aria-label="View ${p.title}">
       <img src="${p.image?.url}" alt="${p.image?.alt ?? p.title}" loading="lazy">
       ${badge}
       <h3>${p.title}</h3>
