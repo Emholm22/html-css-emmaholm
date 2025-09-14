@@ -108,54 +108,19 @@
             </div>
 
         </section>
-        <section id="newSeason">
-            <h3 class="title">NEW SEASON</h3>
-                 <div class="product-container">
-                        <a href="productdetail.html" class="product">
-                            <span class="photo">
-                                <img src="products/beta-down-jacket.png" alt="beta-down-jacket">
+       <section class="filters" aria-label="Product filters">
+  <select id="genderFilter" aria-label="Filter by gender">
+    <option value="">All genders</option>
+    <option value="Male">Men</option>
+    <option value="Female">Women</option>
+  </select>
+  <select id="tagFilter" aria-label="Filter by tag">
+    <option value="">All tags</option>
+  </select>
+  <input id="searchInput" type="search" placeholder="Search title…" aria-label="Search products by title">
+</section>
 
-                            </span>
-                            <span class="details">
-                                <span class="title">Beta Down Jacket</span>
-                                <span class="price">175</span>
-
-                            </span>
-                        </a>
-                        <a href="productdetail.html" class="product">
-                            <span class="photo">
-                                <img src="products/beta-down-jacket-2.png" alt="beta-down-jacket">
-
-                            </span>
-                            <span class="details">
-                                <span class="title">Beta Down Jacket</span>
-                                <span class="price">175</span>
-
-                            </span>
-                        </a>
-                        <a href="productdetail.html" class="product">
-                            <span class="photo">
-                                <img src="products/omega-down-jacket.png" alt="omega-down-jacket">
-
-                            </span>
-                            <span class="details">
-                                <span class="title">Omega Down Jacket</span>
-                                <span class="price">145</span>
-
-                            </span>
-                        </a>
-                        <a href="productdetail.html" class="product">
-                            <span class="photo">
-                                <img src="products/beta-down-jacket-3.png" alt="beta-down-jacket">
-
-                            </span>
-                            <span class="details">
-                                <span class="title">Beta Down Jacket</span>
-                                <span class="price">175</span>
-
-                            </span>
-                        </a> 
-                 </div>
+<section id="productGrid" class="grid product-container" aria-live="polite"></section>
 
          </section>
         <footer id="footer">
