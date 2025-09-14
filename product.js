@@ -4,11 +4,23 @@ const $ = (s) => document.querySelector(s);
 const set = (el, html) => { if (el) el.innerHTML = html; };
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
 
-function getId() {
-  const id = new URLSearchParams(location.search).get("id");
-  if (!id) throw new Error("Missing product id (?id=...). Navigate here by clicking a product card.");
-  return id;
+async function getId() {
+  const qsId = new URLSearchParams(location.search).get("id");
+  if (qsId) return qsId;
+
+  const list = await getProducts().catch(() => []);
+  const first = Array.isArray(list) && list[0];
+  if (first?.id) {
+    const newUrl = `${location.pathname}?id=${encodeURIComponent(first.id)}`;
+    history.replaceState(null, "", newUrl);
+    return first.id;
+  }
+  throw new Error("No product id found.");
 }
+
+const p = await getProduct(await getId());
+
+
 
 function ensureSelectionCSS() {
   if (document.getElementById("selectionPulseCSS")) return;
