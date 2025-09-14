@@ -1,6 +1,5 @@
-import { getProduct } from "./api.js";
+import { getProduct, getProducts } from "./api.js";
 import { addToCart } from "./storage.js";
-
 const $ = (s) => document.querySelector(s);
 const set = (el, html) => { if (el) el.innerHTML = html; };
 const esc = (s) => String(s ?? "").replace(/[&<>"']/g, c => ({'&':'&amp;','<':'&lt;','>':'&gt;','"':'&quot;',"'":'&#39;'}[c]));
